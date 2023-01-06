@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="src/js/bundle.js" defer></script>
+		<link rel="stylesheet" href="src/css/style.css" />
+		<title>Memory Game</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>
+				Memory Game
+				<div class="game-timer">0:00</div>
+			</h1>
+			<div class="grid"></div>
+		</div>
+		<div class="game-over">
+			<h3>New Game</h3>
+			<div class="game-time hidden">
+				The previous game took <span class="time"></span>
+			</div>
+			<div class="inputs">
+				<div class="form-element">
+					<label for="grid-size">Grid Size</label>
+					<input type="number" min="2" max="10" value="4" id="grid-width" />
+					&times;
+					<input type="number" min="2" max="10" value="3" id="grid-height" />
+				</div>
+			</div>
+			<p class="warning hidden wiggle"></p>
+			<div class="game-controls">
+				<button class="btn start">Start</button>
+			</div>
+		</div>
+
+		<div class="overlay hidden"></div>
+	</body>
+</html>
